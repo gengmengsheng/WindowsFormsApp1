@@ -30,11 +30,14 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.rtbShow = new System.Windows.Forms.RichTextBox();
+            this.txtInput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(114, 86);
+            this.button1.Location = new System.Drawing.Point(43, 46);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 43);
             this.button1.TabIndex = 0;
@@ -45,17 +48,45 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(352, 100);
+            this.label1.Location = new System.Drawing.Point(281, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(43, 135);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(153, 48);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "添加内容";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // rtbShow
+            // 
+            this.rtbShow.Location = new System.Drawing.Point(284, 135);
+            this.rtbShow.Name = "rtbShow";
+            this.rtbShow.Size = new System.Drawing.Size(184, 110);
+            this.rtbShow.TabIndex = 3;
+            this.rtbShow.Text = "";
+            // 
+            // txtInput
+            // 
+            this.txtInput.Location = new System.Drawing.Point(499, 135);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(184, 25);
+            this.txtInput.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtInput);
+            this.Controls.Add(this.rtbShow);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -69,6 +100,9 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.RichTextBox rtbShow;
+        private System.Windows.Forms.TextBox txtInput;
     }
 }
 
